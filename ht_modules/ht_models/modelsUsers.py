@@ -21,11 +21,11 @@ def default_username(context):
     return context.get_current_parameters()['email'].split('@')[0]
 
 
-
 class Users(Base_users, UserMixin):
     __tablename__ = 'users'
     id = Column(Integer, primary_key = True)
     email = Column(Text, unique = True, nullable = False)
+    username = Column(Text, default=default_username)
     password = Column(Text, nullable = False)
     admin = Column(Boolean, default=False)
     posts = relationship('BlogPosts', backref='author', lazy=True)
