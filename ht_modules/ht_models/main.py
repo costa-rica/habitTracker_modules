@@ -5,7 +5,8 @@ from sqlalchemy.orm import relationship, backref, sessionmaker
 #     engine_users, engine_cage, engine_bls
 from .Base import dict_base, dict_engine, dict_sess
 
-from .modelsUsers import Users, BlogPosts
+from .modelsUsers import Users, BlogPosts, Habits, \
+    UserHabitDays, UserHabitAssociations
 # from .modelsCage import CageCompanies
 # from .modelsBls import IndustryNames, IndustryValues, \
 #     CommodityNames, CommodityValues
