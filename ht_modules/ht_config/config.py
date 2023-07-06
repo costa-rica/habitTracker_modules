@@ -70,6 +70,9 @@ class ConfigLocal(ConfigBasic):
         self.DIR_DB_AUX_IMAGES_PEOPLE = os.path.join(self.DIR_DB_AUXILARY,"images_people")
         self.DIR_DB_AUX_BLOG = os.path.join(self.DIR_DB_AUXILARY,"blog")
         self.DIR_DB_AUX_BLOG_POSTS = os.path.join(self.DIR_DB_AUXILARY,"blog","posts")
+        
+        self.DIR_DB_AUXILARY_USER_HABITS_DOWNLOADS = os.path.join(self.DIR_DB_AUXILARY,"user_habits_downloads")
+        self.DIR_DB_BACKUP = os.path.join(self.DB_LOCAL_ROOT,"db_backup")
 
     DEBUG = True
 
@@ -89,6 +92,9 @@ class ConfigDev(ConfigBasic):
         self.DIR_DB_AUX_IMAGES_PEOPLE = os.path.join(self.DIR_DB_AUXILARY,"images_people")
         self.DIR_DB_AUX_BLOG = os.path.join(self.DIR_DB_AUXILARY,"blog")
         self.DIR_DB_AUX_BLOG_POSTS = os.path.join(self.DIR_DB_AUXILARY,"blog","posts")
+        
+        self.DIR_DB_AUXILARY_USER_HABITS_DOWNLOADS = os.path.join(self.DIR_DB_AUXILARY,"user_habits_downloads")
+        self.DIR_DB_BACKUP = os.path.join(self.DB_LOCAL_ROOT,"db_backup")
 
     DEBUG = True
     # SQL_URI = env_dict.get('SQL_URI_DEVELOPMENT')
@@ -111,6 +117,9 @@ class ConfigProd(ConfigBasic):
         self.DIR_DB_AUX_IMAGES_PEOPLE = os.path.join(self.DIR_DB_AUXILARY,"images_people")
         self.DIR_DB_AUX_BLOG = os.path.join(self.DIR_DB_AUXILARY,"blog")
         self.DIR_DB_AUX_BLOG_POSTS = os.path.join(self.DIR_DB_AUXILARY,"blog","posts")
+        
+        self.DIR_DB_AUXILARY_USER_HABITS_DOWNLOADS = os.path.join(self.DIR_DB_AUXILARY,"user_habits_downloads")
+        self.DIR_DB_BACKUP = os.path.join(self.DB_LOCAL_ROOT,"db_backup")
 
     DEBUG = False
     TESTING = False
